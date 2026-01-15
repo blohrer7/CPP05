@@ -6,7 +6,7 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 09:32:26 by blohrer           #+#    #+#             */
-/*   Updated: 2026/01/14 11:04:44 by blohrer          ###   ########.fr       */
+/*   Updated: 2026/01/15 10:12:30 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ class Bureaucrat
         const std::string& getName() const;
         int getGrade() const;
         
-        void incrementGrade(int const grade); // 3 -> 2
-        void decrementGrade(int const grade); // 3 -> 4
+        void incrementGrade(); // 3 -> 2
+        void decrementGrade(); // 3 -> 4
         
         class GradeTooHighException : public std::exception {
             public:

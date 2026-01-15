@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/13 11:31:20 by blohrer           #+#    #+#              #
-#    Updated: 2026/01/13 11:31:48 by blohrer          ###   ########.fr        #
+#    Updated: 2026/01/15 10:25:52 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++17
 
 NAME = bureaucrat
 
-SRC =	Dog.cpp \
-		Cat.cpp \
-		WrongAnimal.cpp \
-		WrongCat.cpp \
-		Animal.cpp \
+SRC =	Bureaucrat.cpp \
 		main.cpp
 OBJ = $(SRC:.cpp=.o)
 
