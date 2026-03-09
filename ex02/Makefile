@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/13 11:31:20 by blohrer           #+#    #+#              #
-#    Updated: 2026/01/28 15:09:27 by blohrer          ###   ########.fr        #
+#    Updated: 2026/03/09 11:18:27 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,10 @@ NAME = bureaucrat
 
 SRC =	Bureaucrat.cpp \
 		AForm.cpp \
-		main.cpp
+		main.cpp \
+		ShrubberyCreationForm.cpp \
+		RobotomyRequestForm.cpp \
+		PresidentialPardonForm.cpp
 OBJ = $(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)
@@ -31,7 +34,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-
+	rm -f *_shrubbery
 re: fclean $(NAME)
-
+	
 .PHONY: clean fclean re
